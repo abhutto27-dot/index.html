@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aasia Bhutto | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdf2f8;
+      color: #374151;
+    }
+
+    header {
+      background: linear-gradient(135deg, #7c3aed, #ec4899);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    header p {
+      margin-top: 12px;
+      font-size: 18px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .accordion {
+       background: linear-gradient(135deg, #fdbbfd, #d6c4f8);
+      border-radius: 14px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .accordion-header {
+      cursor: pointer;
+      padding: 18px 20px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #7c3aed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .accordion-header span {
+      font-size: 22px;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 0 20px 20px;
+      color: #374151;
+    }
+
+    h2 {
+      color: #7c3aed;
+      border-bottom: 2px solid #f9a8d4;
+      padding-bottom: 10px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #fbcfe8;
+      color: #831843;
+      padding: 10px 16px;
+      margin: 6px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #fffefe;
+      padding: 24px;
+      border-radius: 6px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      cursor: pointer;
+      
+    }
+    .card1 {
+      background: #ffffff;
+      padding: 24px;
+      border-radius: 6px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      cursor: pointer;
+      
+    }
+    .card img {
+      width: 80%;
+      height: 290px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 2px;
+      transition: transform 0.3s;
+    }
+     
+    .card1 img {
+      width: 80%;
+      height: 390px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 2px;
+      transition: transform 0.3s;
+    }
+    .card img:hover {
+      transform: scale(1.3);
+    }
+    .card1 img:hover {
+      transform: scale(1.3);
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      max-height: 100%;
+      border-radius: 12px;
+    }
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #7c3aed, #ec4899);
+      color: #fff;
+      text-align: center;
+      padding: 24px;
+    }
+
+    a {
+      color: #7c3aed;
+      text-decoration: none;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Aasia Bhutto</h1>
+    <p>Graphic Designer | Creative Freelancer</p>
+  </header>
+
+   <section>
+    <h2>Designs</h2>
+
+
+
+<div class="accordion">
+    <div class="accordion-header">
+      Cosmetic Designs
+    </div>
+    <div class="accordion-content" style="display: block;">
+      <div class="projects">
+        <div class="card" onclick="openModal(this.querySelector('img'))">
+          <img src="C:\Users\Aasia bhutto\Downloads\my portfolio\Screenshot (16).png">
+          <h3>Design 1</h3>
+        </div>
+        <div class="card" onclick="openModal(this.querySelector('img'))">
+          <img src="50& OFF.png">
+          <h3>Design 2</h3>
+        </div>
+        <div class="card" onclick="openModal(this.querySelector('img'))">
+          <img src="ese.png">
+          <h3>Design 2</h3>
+        </div>
+       
+        
+        </div>
+      </div>
+    </div>
+
+
+
+
+    
+ <div class="accordion">
+    <div class="accordion-header ">
+      Random Designs
+    </div>
+    <div class="accordion-content" style="display: block;">
+      <div class="projects">
+        <div class="card" onclick="openModal(this.querySelector('img'))">
+          <img src="C:\Users\Aasia bhutto\Downloads\my portfolio\BEST MILKSHAKE.png" alt="Random Design 1">
+          <h3>Random Design 1</h3>
+          <p>Creative experiment or concept design.</p>
+        </div>
+        <div class="card" onclick="openModal(this.querySelector('img'))">
+          <img src="C:\Users\Aasia bhutto\Downloads\my portfolio\fanta drink.png" alt="Random Design 2">
+          <h3>Random Design 2</h3>
+          <p>Typography or illustration based design.</p>
+        </div>
+        <div class="card" onclick="openModal(this.querySelector('img'))">
+          <img src="C:\Users\Aasia bhutto\Downloads\my portfolio\Add a heading.png">
+       <h3>Random Design 2</h3>
+          <p>Typography or illustration based design.</p>
+    </div>
+  </div>
+
+
+    
+
+
+
+
+
+
+ <div class="accordion">
+    <div class="accordion-header ">
+      Random Designs
+    </div>
+    <div class="accordion-content" style="display: block;">
+      <div class="projects">
+        <div class="card1" onclick="openModal(this.querySelector('img'))">
+          <img src="C:\Users\Aasia bhutto\Downloads\my portfolio\WE.png" alt="Random Design 1">
+          <h3>Random Design 1</h3>
+          <p>Creative experiment or concept design.</p>
+        </div>
+        <div class="card1" onclick="openModal(this.querySelector('img'))">
+          <img src="C:\Users\Aasia bhutto\Downloads\my portfolio\small.png" alt="Random Design 2">
+          <h3>Random Design 2</h3>
+          <p>Typography or illustration based design.</p>
+        </div>
+         <div class="card" onclick="openModal(this.querySelector('img'))">
+          <img src="C:\Users\Aasia bhutto\Downloads\my portfolio\Untitled design.png" alt="Random Design 2">
+          <h3>Random Design 2</h3>
+          <p>Typography or illustration based design.</p>
+        </div>
+       
+  </div>
+
+
+
+
+  
+
+
+
+   
+  </section>
+
+
+  
+  <section class="accordion">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      About me <span>+</span>
+    </div>
+    <div class="accordion-content">
+      <div class="skills">
+        <span>I am a passionate graphic designer and creative freelancer with a strong eye for clean,
+        modern, and aesthetic designs. I specialize in cosmetic designs, social media posts,
+        logos, and creative visuals that help brands look professional and attractive.</span>
+       
+      </div>
+    </div>
+  </section>
+
+  <section class="accordion">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      Skills <span>+</span>
+    </div>
+    <div class="accordion-content">
+      <div class="skills">
+        <span>🎨 Graphic Design</span>
+        <span>📱 Instagram Posts</span>
+        <span>📘 Facebook Posts</span>
+        <span>🧴 Cosmetic Designs</span>
+        <span>📄 Flyer Design</span>
+        <span>🖼️ Poster Design</span>
+        <span>🧩 Canva</span>
+        <span>🖥️ Photoshop</span>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <section>
+    <h2>Contact</h2>
+
+
+
+    <p>Email:<a href="mailto:bhuttoaasia@gmail.com">bhuttoaasia@gmail.com</a></p>
+    <p>Fiverr / Upwork: your profile link</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Aasia Bhutto. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleAccordion(header) {
+      const content = header.nextElementSibling;
+      const icon = header.querySelector('span');
+
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+        icon.textContent = '+';
+      } else {
+        content.style.display = 'block';
+        icon.textContent = '−';
+      }
+    }
+  </script>
+
+</body>
+
+</html>
